@@ -11,296 +11,49 @@
 </head>
 <body class="app-body">
     <header></header>
-    <div id="user-projects-container" class="app-container">
+    <div id="user-followers-container" class="app-container">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
-                <span>My Projects</span>
-                <span>Active</span>
+                <span>My Connections</span>
+                <span>(29)</span>
             </div>
-            <div class="d-flex">
-                <div class="dropdown">
-                    <button class="btn dropdown-bs-toggle border-0 py-2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Active
-                        <i class="d-inline-block bi bi-chevron-down ms-1"></i>
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item d-flex justify-content-between" href="#">Active <i class="bi bi-check text-primary invisible"></i></a></li>
-                        <li><a class="dropdown-item d-flex justify-content-between" href="#">In Progress <i class="bi bi-check text-primary invisible"></i></a></li>
-                        <li><a class="dropdown-item d-flex justify-content-between" href="#">To Do <i class="bi bi-check text-primary invisible"></i></a></li>
-                        <li><a class="dropdown-item d-flex justify-content-between" href="#">Completed <i class="bi bi-check text-primary invisible"></i></a></li>
-                    </ul>
-                </div>
-                <button type="button" class="btn btn-primary">New Project</button>
+            <div class="dropdown me-3">
+                <button class="btn dropdown-bs-toggle bg-white border-0 py-2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Active
+                    <i class="d-inline-block bi bi-chevron-down ms-1"></i>
+                </button>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#">Active <i class="bi bi-check text-primary invisible"></i></a></li>
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#">In Progress <i class="bi bi-check text-primary invisible"></i></a></li>
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#">To Do <i class="bi bi-check text-primary invisible"></i></a></li>
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#">Completed <i class="bi bi-check text-primary invisible"></i></a></li>
+                </ul>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-xl-4">
+        <div class="row g-4 mb-4">
+            <div class="col-md-6 col-xxl-4">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/plurk.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-primary-subtle text-primary border-0 align-self-center fw-semibold">In Progress</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Fitness App</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Sep 22, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 50% completed">
-                            <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    <div class="card-body d-flex align-items-center flex-column">
+                        <img src="https://preview.keenthemes.com/keen/demo1/assets/media//avatars/300-11.jpg" alt="profile pic" height="65px" width="65px" class="rounded-circle">
+                        <div class="d-flex flex-column align-items-center mb-4">
+                            <span class="fw-semibold">Patric Watson</span>
+                            <span class="fw-medium">Art Director at Novica Co.</span>
                         </div>
                         <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-6.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emma Smith" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-1.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Rudy Stone" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-primary text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">S</div>
+                            <div class="d-flex flex-column mx-2 px-3 border">
+                                <span class="fw-semibold">$14,560</span>
+                                <span class="fw-medium">Earnings</span>
+                            </div>
+                            <div class="d-flex flex-column mx-2 px-3 border">
+                                <span class="fw-semibold">$236,400</span>
+                                <span class="fw-medium">Sales</span>
+                            </div>
                         </div>
+                        <button class="btn bg-primary-subtle text-primary"><i class="bi bi-check"></i>Following</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/disqus.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-light text-secondary border-0 align-self-center fw-semibold">Pending</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Leaf CRM</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">May 10, 2021</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$36,400.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 30% completed">
-                            <div class="progress-bar bg-info" style="width: 30%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="d-flex rounded-circle bg-warning text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Alan Warden">A</div>
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-5.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Brian Cox" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/figma-1.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-success-subtle text-success border-0 align-self-center fw-semibold">Completed</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Atica Banking</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Mar 14, 2021</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$605,100.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 100% completed">
-                            <div class="progress-bar bg-success" style="width: 100%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-2.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Mad Macy" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-9.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cris Willson" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-info text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Mike Garcie">M</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/sentry-3.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-light text-secondary border-0 align-self-center fw-semibold">Pending</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Finance Dispatch</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">May 05, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 60% completed">
-                            <div class="progress-bar bg-info" style="width: 60%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="d-flex rounded-circle bg-warning text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">N</div>
-                            <div class="d-flex rounded-circle bg-success text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">R</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/xing-icon.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-primary-subtle text-primary border-0 align-self-center fw-semibold">In Progress</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">9 Degree</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Oct 25, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 40% completed">
-                            <div class="progress-bar bg-primary" style="width: 40%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-20.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Francis Mitcham" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-7.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Michelle Swanston" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-primary text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">S</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/tvit.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-primary-subtle text-primary border-0 align-self-center fw-semibold">In Progress</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">GoPro App</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Dec 20, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 70% completed">
-                            <div class="progress-bar bg-primary" style="width: 70%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-2.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emma Smith" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-success text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">R</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/aven.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-primary-subtle text-primary border-0 align-self-center fw-semibold">In Progress</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Buldozer CRM</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Jul 25, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 70% completed">
-                            <div class="progress-bar bg-primary" style="width: 70%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-2.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Melody Macy" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-14.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="John Mixin" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-primary text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Susan Redwood">S</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/treva.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-danger bg-danger-subtle text-danger border-0 align-self-center fw-semibold">Overdue</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Aviasales App</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Jul 25, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 10% completed">
-                            <div class="progress-bar bg-danger" style="width: 10%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="d-flex rounded-circle bg-warning text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Alan Warden">A</div>
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-5.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Brian Cox" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/kanba.svg" class="bg-light" height="50px" width="50px" alt="Brand Logo">
-                            <button class="btn btn-primary bg-success-subtle text-success border-0 align-self-center fw-semibold">Completed</button>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="fw-semibold">Oppo CRM</span>
-                            <span class="fw-medium">CRM App application to HR efficiency</span>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">Jun 24, 2024</span><span class="fw-medium">Due Date</span>
-                            </div>
-                            <div class="d-flex flex-column border px-3">
-                                <span class="fw-semibold">$284,900.00</span><span class="fw-medium">Budget</span>
-                            </div>
-                        </div>
-                        <div class="progress flex-grow-1 bg-light me-2" role="progressbar" aria-label="success-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="This project 100% completed">
-                            <div class="progress-bar bg-success" style="width: 100%"></div>
-                        </div>
-                        <div class="d-flex">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-2.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Nick Macy" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-9.jpg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Sean Paul" class="rounded-circle stack" height="35px" width="35px" alt="profile pic">
-                            <div class="d-flex rounded-circle bg-info text-white fw-semibold justify-content-center align-items-center stack" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Mike Collin">M</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>    
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

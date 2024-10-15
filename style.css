@@ -8,6 +8,10 @@ html {
     }
 }
 
+.fs-7{
+    font-size: 0.95rem !important;
+}
+
 .app-body header{
     background-color: #F9F9F9;
 }
@@ -21,99 +25,51 @@ html {
 }
 
 @media (min-width: 1200px) {
-    #user-projects-container .row {
+    #user-followers-container .row {
         --bs-gutter-x: 2.25rem;
         --bs-gutter-y: 2.25rem;
-    }    
+    }
+
+    #user-followers-container .row {
+        margin-bottom: 2.25rem;
+    }
 }
 
-#user-projects-container .row .card:hover {
-    cursor: pointer;
-    border: 1px solid #1B84FF;
-}
-
-#user-projects-container .row .card .card-body {
+#user-followers-container .row .card .card-body {
     padding: 2.25rem;
 }
 
-#user-projects-container .row .card .card-body>div:first-child {
-    padding-bottom: 2.25rem;
-}
-
-#user-projects-container .row .card .card-body div:first-child img {
-    padding: .75rem;
-    border-radius: .475rem;
-}
-
-#user-projects-container .row .card .card-body div:first-child button {
-    font-size: .85rem;
-}
-
-#user-projects-container .row .card .card-body>div>span:first-child {
-    font-size: calc(1.26rem + .12vw);
-}
-
-#user-projects-container .row .card .card-body>div>span:last-child {
-    font-size: 1.15rem;
-    margin-top: .25rem;
-    margin-bottom: 1.75rem;
-}
-
-#user-projects-container .row .card .card-body div span {
-    color: #071437;
-}
-
-#user-projects-container .row .card .card-body div>div>span:first-child {
-    color: #252F4A;
-    font-size: 1.075rem;
-}
-
-#user-projects-container .row .card .card-body div span:last-child {
-    color: #99A1B7;
-}
-
-#user-projects-container .row .card .card-body>div:nth-child(3) {
+#user-followers-container .row .card .card-body>img {
     margin-bottom: 1.25rem;
 }
 
-#user-projects-container .row .card .card-body>div:nth-child(3)>div {
+#user-followers-container .row .card .card-body>div:first-of-type>span:first-child {
+    color: #252F4A;
+    font-size: 1.25rem;
+}
+
+#user-followers-container .row .card .card-body>div:first-of-type>span:last-child {
+    color: #99A1B7;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type {
+    margin-bottom: 1.25rem;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type>div {
     margin-bottom: .75rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
-    min-width: 125px;
+    min-width: 90px;
     border-style: dashed !important;
     border-radius: .475rem;
 }
 
-#user-projects-container .row .card .card-body>div:nth-child(3)>div:first-child {
-    margin-right: 1.75rem;
+#user-followers-container .row .card .card-body>div:last-of-type>div>span:first-child {
+    color: #4B5675;
+    font-size: 1.075rem;
 }
 
-#user-projects-container .row .card .card-body .progress {
-    height: 4px;
-    margin-bottom: 1.25rem;
-}
-
-#user-projects-container .row .card .card-body .progress:hover {
-    cursor: pointer;
-}
-
-#user-projects-container .row .card .card-body>div:last-child {
-    margin-left: 10px;
-}
-
-#user-projects-container .row .card .card-body>div:last-child div {
-    height: 35px;
-    width: 35px;
-}
-
-#user-projects-container .row .card .card-body>div:last-child .stack {
-    margin-left: -10px;
-    z-index: 0;
-}
-
-#user-projects-container .row .card .card-body>div:last-child .stack:hover {
-    cursor: pointer;
-    transition: all .3s ease;
-    z-index: 1;
+#user-followers-container .row .card .card-body>div:last-of-type>div>span:last-child {
+    color: #99A1B7;
 }
