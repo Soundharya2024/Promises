@@ -39,16 +39,35 @@ html {
     padding: 2.25rem;
 }
 
-#user-followers-container .row .card .card-body>img {
+#user-followers-container .row .card .card-body>.pro-pic-container {
     margin-bottom: 1.25rem;
 }
 
-#user-followers-container .row .card .card-body>div:first-of-type>span:first-child {
+/*Profile without profile pics*/
+#user-followers-container .row .card .card-body>.pro-pic-container>div:first-child{
+    height: 65px;
+    width: 65px;
+    font-size: calc(1.325rem + .9vw);
+}
+
+#user-followers-container .row .card .card-body>.pro-pic-container>.online-indicator {
+    height: 15px;
+    width: 15px;
+    top: 75%;
+    left: 75%;
+}
+
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:first-child {
     color: #252F4A;
     font-size: 1.25rem;
 }
 
-#user-followers-container .row .card .card-body>div:first-of-type>span:last-child {
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:first-child:hover {
+    cursor: pointer;
+    color: #1B84FF;
+}
+
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:last-child {
     color: #99A1B7;
 }
 
@@ -72,4 +91,48 @@ html {
 
 #user-followers-container .row .card .card-body>div:last-of-type>div>span:last-child {
     color: #99A1B7;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="following"] {
+    background-color: #1B84FF10;
+    color: #1B84FF;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="following"]:hover {
+    background-color : #1B84FF;
+    color: #FFFFFF;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="follow"] {
+    background-color: #F1F1F4;
+    color: #252F4A;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="follow"]:hover {
+    background-color : #99A1B750;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="f-loading"] {
+    pointer-events: none;
+    background-color: #F1F1F4;
+    color: #252F4A75;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="fg-loading"] {
+    pointer-events: none;
+    background-color: #1B84FF10;
+    color: #1B84FF75;
+}
+
+#user-followers-container .row .card .card-body>button>i.btn-icon {
+    font-size: 1.5rem;
+    padding-right: 0.35rem;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="f-loading"], #user-followers-container .row .card .card-body>button[data-follow-status="fg-loading"] {
+    padding: calc(.55rem + 1px) calc(1rem + 1px);
+}
+
+#user-followers-container>div:last-child>button {
+    padding: calc(.775rem + 1px) calc(1.5rem + 1px);
 }
